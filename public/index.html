@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="<%= BASE_URL %>fonts/feather/feather.css" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <!-- Libs JS -->
+  <script src="<%= BASE_URL %>js/jquery.min.js"></script>
+  <script src="<%= BASE_URL %>js/bootstrap.bundle.min.js"></script>
+  <script src="<%= BASE_URL %>js/draggable.bundle.legacy.js"></script>
+  <script src="<%= BASE_URL %>js/autosize.min.js"></script>
+  <script src="<%= BASE_URL %>js/dropzone.min.js"></script>
+  <script src="<%= BASE_URL %>js/flatpickr.min.js"></script>
+  <script src="<%= BASE_URL %>js/highlight.pack.min.js"></script>
+  <script src="<%= BASE_URL %>js/jquery.mask.min.js"></script>
+  <script src="<%= BASE_URL %>js//list.min.js"></script>
+  <script src="<%= BASE_URL %>js/quill.min.js"></script>
+  <script src="<%= BASE_URL %>js/select2.full.min.js"></script>
+
+  <!-- Map -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+  <!-- Theme JS -->
+  <!-- build:js <%= BASE_URL %>assets/js/theme.min.js -->
+  <script src="<%= BASE_URL %>js/polyfills.js"></script>
+  <script src="<%= BASE_URL %>js/autosize.js"></script>
+  <script src="<%= BASE_URL %>js/dropdowns.js"></script>
+  <script src="<%= BASE_URL %>js/flatpickr.js"></script>
+  <script src="<%= BASE_URL %>js/highlight.js"></script>
+  <script src="<%= BASE_URL %>js/kanban.js"></script>
+  <script src="<%= BASE_URL %>js/list.js"></script>
+  <script src="<%= BASE_URL %>js/map.js"></script>
+  <script src="<%= BASE_URL %>js/navbar.js"></script>
+  <script src="<%= BASE_URL %>js/popover.js"></script>
+  <script src="<%= BASE_URL %>js/quill.js"></script>
+  <script src="<%= BASE_URL %>js/select2.js"></script>
+  <script src="<%= BASE_URL %>js/tooltip.js"></script>
+  <script src="<%= BASE_URL %>js/checklist.js"></script>
+  <script src="<%= BASE_URL %>js/wizard.js"></script>
+  <!-- endbuild -->
+  <!-- build:js <%= BASE_URL %>js/dashkit.min.js -->
+  <!-- <script src="<%= BASE_URL %>js/dashkit.js"></script> -->
+  <!-- endbuild -->
+
+</html>

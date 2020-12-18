@@ -1,0 +1,14 @@
+// 
+// user.scss
+// Use this to write your custom SCSS
+//
+
+body {
+    overflow-x: hidden;
+}
+
+.chart {
+    canvas {
+        height: 300px;
+    }
+}
