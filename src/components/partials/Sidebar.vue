@@ -57,7 +57,12 @@
       <ul class="navbar-nav">
         <li class="nav-item">
           <router-link class="nav-link" to="/">
-            <i class="fe fe-grid"></i> Dashboard
+            <i class="fe fe-grid"></i> Home
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link" to="/mapmanager">
+            <i class="fe fe-archive"></i> Map Table
           </router-link>
         </li>
       </ul>
@@ -135,9 +140,9 @@ export default {
   },
   data() {
     return {
-    }
+    };
   }
-}
+};
 </script>
 
 <style lang="scss" scope></style>
