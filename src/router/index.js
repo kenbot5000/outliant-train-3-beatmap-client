@@ -1,13 +1,14 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
 import VueBodyClass from 'vue-body-class';
 
-import Dashboard from '../components/Dashboard.vue'
-import DashkitComponents from '../components/DashkitComponents.vue'
-import Login from '../views/Login.vue'
-import Signup from '../views/Signup.vue'
+import Dashboard from '../components/Dashboard.vue';
+import DashkitComponents from '../components/DashkitComponents.vue';
+import MapManager from '../components/MapManager.vue';
+import Login from '../views/Login.vue';
+import Signup from '../views/Signup.vue';
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
@@ -32,19 +33,24 @@ const routes = [
     name: 'signup',
     component: Signup
   },
-]
+  {
+    path: '/mapmanager',
+    name: 'mapmanager',
+    component: MapManager
+  }
+];
 
 const router = new VueRouter({
   mode: 'history',
   routes
-})
+});
 
 const vueBodyClass = new VueBodyClass(routes);
 
 
 router.beforeEach((to, from, next) => {
-  vueBodyClass.guard(to, next)
-  next()
-})
+  vueBodyClass.guard(to, next);
+  next();
+});
 
-export default router
+export default router;
